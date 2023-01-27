@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main(){
+clrscr();
+
+int i,j,sum=0,count,r,c,arr[3][3],avg;
+
+printf("enter the c & r value:");
+scanf("%d%d",&c,&r);
+printf("how many elements in the matrix : ");
+scanf("%d",&count);
+printf("enter the elements:");
+for(i=0;i<r;i++){
+for(j=0;j<c;j++){
+scanf("%d",&arr[i][j]);
+}
+}
+for(i=0;i<r;i++){
+for(j=0;j<c;j++){
+sum=sum+arr[i][j];
+}
+}
+
+avg=sum/count;
+printf("sum =%d\n",sum);
+printf("average =%d",avg);
+getch();
+}
