@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+float principle,rate,time,a;
+clrscr();
+printf("enter the value principle:");
+scanf("%f",&principle) ;
+printf("enter the value rate:");
+scanf("%f",&rate);
+printf("enter the vaue time:");
+scanf("%f",&time);
+a=(principle*rate*time);
+a=a/100;
+printf("the intrest is=%f ",a);
+getch();
+}
